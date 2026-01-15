@@ -1,0 +1,17 @@
+{
+  "name": "BR-Balance",
+  "id": "BR-Balance",
+  "version": "1.0",
+  "game_id" : "eu5",
+  "supported_game_version": "1.0.*",
+  "short_description": "",
+  "tags": [],
+  "picture": "thumbnail.png",
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true,
+    "replace_paths": [
+
+    ]
+  }
+}

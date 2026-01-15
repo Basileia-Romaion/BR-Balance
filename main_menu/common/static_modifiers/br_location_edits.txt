@@ -1,0 +1,23 @@
+﻿###################################
+# Hardcoded
+###################################
+#multiplied with 1-control
+
+#negative because inject doesn't replace is adds or subtracts
+INJECT:inverse_control = {
+	game_data = {
+		category = location
+	}
+	
+	#local_crown_estate_power = -1.0
+	local_pop_promotion_speed_modifier = 0.25 #BR edit was -1
+	#local_pop_conversion_speed_modifier = -1.0
+	#local_pop_assimilation_speed_modifier = -1.0
+	local_tribal_promotion = -1.0 #br added
+
+	local_levy_size_modifier = 0.50 #BR edit was -1
+	local_manpower_modifier = 0.25 #BR edit was -1
+	local_sailors_modifier = 0.25 #BR edit was -1
+	monthly_rebel_growth = 0.001 #BR added
+
+}
