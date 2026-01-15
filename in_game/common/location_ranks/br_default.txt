@@ -9,6 +9,8 @@ REPLACE:city = {
 		local_clergy_desired_pop = 0.1
 	
 		local_max_control = 0.15 #increased from 0.1
+		local_proximity_source = 5 #br added
+
 		local_population_capacity = 100
 		local_population_capacity_modifier = 0.25
 		
@@ -62,6 +64,8 @@ REPLACE:town = {
 		local_clergy_desired_pop = 0.05
 		
 		local_max_control = 0.1 #Increased from 0.05
+		local_proximity_source = 2 #br added
+		
 		local_population_capacity = 20
 		local_population_capacity_modifier = 0.10
 		local_food_capacity = 250
