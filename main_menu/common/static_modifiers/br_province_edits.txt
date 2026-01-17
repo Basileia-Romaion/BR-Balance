@@ -1,0 +1,4 @@
+INJECT:province_starving = {
+	local_defensive = -0.25
+	local_garrison_size_modifier = -0.25
+}
