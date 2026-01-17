@@ -30,3 +30,7 @@ INJECT:province_capital = {
 	local_proximity_source = 2 #BR added
 	local_max_control = 0.05 #BR added
 }
+
+INJECT:is_occupied = {
+	local_food_capacity_modifier = -0.5
+}
