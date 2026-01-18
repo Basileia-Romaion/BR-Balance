@@ -15,10 +15,10 @@ INJECT:inverse_control = {
 	#local_pop_assimilation_speed_modifier = -1.0
 	local_tribal_promotion = -1.0 #br added
 
-	local_levy_size_modifier = 0.25 #BR edit was -1
-	local_manpower_modifier = 0.25 #BR edit was -1
-	local_sailors_modifier = 0.25 #BR edit was -1
-	monthly_rebel_growth = 0.001 #BR added
+	local_levy_size_modifier = 0.25 #BR edit total is -0.75 was -1
+	local_manpower_modifier = 0.25 #BR edit total is -0.75 was -1
+	local_sailors_modifier = 0.25 #BR edit total is -0.75 was -1
+	monthly_rebel_growth = 0.002 #BR added
 
 }
 
@@ -32,7 +32,7 @@ INJECT:province_capital = {
 }
 
 INJECT:is_occupied = {
-	local_monthly_prosperity = -0.025 #br total will be 0.05 was: -0.025
+	local_monthly_prosperity = -0.015 #br total will be 0.040 was: -0.025
 	local_food_capacity_modifier = -0.5 #br added
 }
 
