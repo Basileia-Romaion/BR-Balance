@@ -1,7 +1,7 @@
 {
   "name": "BR-Balance",
   "id": "BR-Balance",
-  "version": "1.0",
+  "version": "1.1",
   "game_id" : "eu5",
   "supported_game_version": "1.0.*",
   "short_description": "",
