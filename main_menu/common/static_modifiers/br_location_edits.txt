@@ -22,11 +22,20 @@ INJECT:inverse_control = {
 
 }
 
+INJECT:capital = {
+	game_data = {
+		category = location
+	}
+	local_garrison_size = 0.150 #BR added
+	#fort_level = 1 #BR added
+}
+
 INJECT:province_capital = {
 	game_data = {
 		category = location
 	}
 
+	local_garrison_size = 0.075 #BR added
 	local_proximity_source = 2 #BR added
 	local_max_control = 0.05 #BR added
 }

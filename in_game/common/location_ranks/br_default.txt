@@ -10,6 +10,7 @@ REPLACE:city = {
 	
 		local_max_control = 0.15 #increased from 0.1
 		local_proximity_source = 5 #br added
+		local_garrison_size = 0.150 #br added
 
 		local_population_capacity = 100
 		local_population_capacity_modifier = 0.25
@@ -20,7 +21,7 @@ REPLACE:city = {
 		
 		local_integration_speed_modifier = -0.5
 		
-		local_monthly_food_modifier = -0.33
+		local_monthly_food_modifier = -0.38 #was 33
 		
 		local_pop_promotion_speed_modifier = 0.25
 		
@@ -65,13 +66,14 @@ REPLACE:town = {
 		
 		local_max_control = 0.1 #Increased from 0.05
 		local_proximity_source = 2 #br added
+		local_garrison_size = 0.05 #br added
 		
 		local_population_capacity = 20
 		local_population_capacity_modifier = 0.10
 		local_food_capacity = 250
 		local_integration_speed_modifier = -0.25
 		
-		local_monthly_food_modifier = -0.2
+		local_monthly_food_modifier = -0.25 #was 0.2
 		free_building_levels = 25
 	}
 	
