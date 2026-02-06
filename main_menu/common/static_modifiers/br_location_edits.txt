@@ -10,7 +10,7 @@ INJECT:inverse_control = {
 	}
 	
 	#local_crown_estate_power = -1.0
-	local_pop_promotion_speed_modifier = 0.25 #BR edit was -1
+	#local_pop_promotion_speed_modifier = 0.25 #BR edit was -1
 	#local_pop_conversion_speed_modifier = -1.0
 	#local_pop_assimilation_speed_modifier = -1.0
 	local_tribal_promotion = -1.0 #br added
@@ -19,7 +19,7 @@ INJECT:inverse_control = {
 	local_manpower_modifier = 0.25 #BR edit total is -0.75 was -1
 	local_sailors_modifier = 0.25 #BR edit total is -0.75 was -1
 	#monthly_rebel_growth = 0.05 #BR added
-	local_separatism = 0.5 #BR added
+	local_separatism = 0.25 #BR added
 }
 
 INJECT:capital = {
