@@ -28,11 +28,13 @@ REPLACE:city = {
 		free_building_levels = 100
 		
 		max_constructions_at_same_time = 1
+
+		local_peasant_enfranchisment = 0.25
 	}
 	
 	country_modifier = {
 		monthly_doom = 0.03
-		fort_limit = 1
+		fort_limit = 2
 	}
 	
 	allow = {
@@ -75,14 +77,25 @@ REPLACE:town = {
 		
 		local_monthly_food_modifier = -0.25 #was 0.2
 		free_building_levels = 25
+		local_peasant_enfranchisment = 0.1
 	}
 	
 	country_modifier = {
 		monthly_doom = 0.01
+		fort_limit = 1
 	}
 	
 	allow = {
-		population >= 15 #was 5
+		population >= 15
+		province = {
+			any_location_in_province = {
+				is_city = yes
+				count < 2
+			}
+		}
+		owner = {
+			num_locations > 10
+		}
 		modifier:cannot_upgrade_location = no
 	}
 	

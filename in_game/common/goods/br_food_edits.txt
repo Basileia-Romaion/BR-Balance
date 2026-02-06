@@ -12,5 +12,6 @@ TRY_REPLACE:fish = {
 	
 	demand_multiply = {
 		upper = 2
+		tribesmen = 0
 	}
 }
