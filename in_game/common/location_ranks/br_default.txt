@@ -39,7 +39,7 @@ REPLACE:city = {
 	
 	allow = {
 		location_rank = location_rank:town
-		population >= 45 # was 30
+		population >= 50 # was 30
 		modifier:cannot_upgrade_location = no
 	}
 	max_rank = yes
@@ -93,8 +93,16 @@ REPLACE:town = {
 				count < 2
 			}
 		}
-		owner = {
-			num_locations > 10
+		OR = {
+			AND = {
+				is_capital = yes
+				owner = {
+					num_locations > 2
+				}
+			}
+			owner = {
+				num_locations > 9
+			}
 		}
 		modifier:cannot_upgrade_location = no
 	}

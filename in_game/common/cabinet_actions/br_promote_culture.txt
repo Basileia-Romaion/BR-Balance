@@ -125,7 +125,7 @@
 	}
 
 	location_modifier = {
-		local_pop_assimilation_speed = 0.02 #br edited from 0.04
+		local_pop_assimilation_speed = 0.01 #br edited from 0.04
 	}
 
 	progress = {

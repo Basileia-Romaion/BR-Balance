@@ -5,8 +5,8 @@
 
 #negative because inject doesn't replace is adds or subtracts
 INJECT:country_base_values = {
-	global_pop_assimilation_speed = -0.001 #br edit from 0.002
-	global_pop_conversion_speed = -0.001 #br edit from 0.002
+	global_pop_assimilation_speed = -0.0015 #br edit from 0.002
+	global_pop_conversion_speed = -0.0015 #br edit from 0.002
 	global_laborers_migration_allowed = yes #br enabled
 }
 
