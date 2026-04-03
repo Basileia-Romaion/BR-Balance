@@ -124,8 +124,8 @@ REPLACE:rural_settlement = {
 		local_monthly_food_modifier = 0.1
 		
 		local_population_growth = 0.001
-		local_pop_assimilation_speed_modifier = -0.25 #br added
-		local_pop_conversion_speed_modifier = -0.25 #br added
+		local_pop_assimilation_speed_modifier = -0.33 #br added
+		local_pop_conversion_speed_modifier = -0.33 #br added
 		#local_tribal_promotion = -0.25 #br added
 	}
 	
