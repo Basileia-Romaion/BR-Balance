@@ -7,7 +7,10 @@
 	}
 	
 	allow = {
-		cultural_unity < 1.0
+		AND = {##
+			cultural_unity < 1.0
+			is_ai = no
+		}
 	}
 
 	
@@ -28,10 +31,37 @@
 		}
 		default_sort = area_primary_culture_percentage
 		visible = {
-			any_location_in_area = {
-				local_cultural_unity < 1.0
-				owner ?= {
-					this = scope:actor
+			OR = {
+				AND = { # for humans
+					scope:actor = {
+						is_ai = no
+					}
+					OR = {
+						scope:actor = {
+							culture_percentage_in_country = {
+								culture = root
+								value >= 0.01
+							}
+						}
+						
+						cultural_view = {
+							target = scope:actor.culture
+							value > neutral 
+						}
+						reverse_cultural_view = {
+							target = scope:actor.culture
+							value > neutral 
+						}
+						
+						is_primary_or_accepted_in = scope:actor
+					}
+				}
+
+				AND = { # for AI
+					scope:actor = {
+						is_ai = yes
+					}
+					is_primary_in = scope:actor 
 				}
 			}
 		}

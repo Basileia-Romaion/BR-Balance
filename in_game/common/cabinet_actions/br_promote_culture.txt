@@ -8,7 +8,10 @@
 	}
 	
 	allow = {
-		cultural_unity < 1.0
+		AND = {##
+			cultural_unity < 1.0
+			is_ai = no
+		}
 	}
 	
 	select_trigger = {
