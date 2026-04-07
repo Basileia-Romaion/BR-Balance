@@ -77,6 +77,9 @@
 	location_modifier = {
 		local_pop_assimilation_speed = 0.01 #br edited from 0.02
 	}
+	country_modifier = {
+		monthly_nationalist_rebel_growth = 0.02 # +2% nationalist rebel growth while active
+	}
 
 
 	map_marker = {

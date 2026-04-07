@@ -130,6 +130,9 @@
 	location_modifier = {
 		local_pop_assimilation_speed = 0.02 #br edited from 0.04
 	}
+	country_modifier = {
+		monthly_nationalist_rebel_growth = 0.015 # +1.5% nationalist rebel growth while active
+	}
 
 	progress = {
 		scope:target_1 = {
