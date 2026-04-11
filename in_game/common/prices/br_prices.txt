@@ -1,0 +1,106 @@
+#city/town
+TRY_REPLACE:city_upgrade = {
+	scaled_gold = 10
+	min_scale = 2000
+	max_scale = 6000
+}
+
+TRY_REPLACE:town_upgrade = {
+	scaled_gold = 5
+	min_scale = 500
+	max_scale = 2500
+}
+
+#resources
+TRY_REPLACE:expand_rgo_mining = {
+	scaled_gold = 0.8
+	min_scale = 75
+	max_scale = 500
+}
+
+TRY_REPLACE:expand_rgo_farming = {
+	scaled_gold = 0.4
+	min_scale = 50
+	max_scale = 250
+}
+
+TRY_REPLACE:expand_rgo_hunting = {
+	scaled_gold = 0.5
+	min_scale = 50
+	max_scale = 250
+}
+
+TRY_REPLACE:expand_rgo_gathering = {
+	scaled_gold = 0.5
+	min_scale = 50
+	max_scale = 250
+}
+
+TRY_REPLACE:expand_rgo_forestry = {
+	scaled_gold = 0.6
+	min_scale = 50
+	max_scale = 350
+}
+
+#age based scaling
+TRY_REPLACE:p_building_age_1_traditions = {
+	scaled_gold = 0.5
+	min_scale = 50
+	max_scale = 250
+}
+TRY_REPLACE:p_building_age_2_renaissance = {
+	scaled_gold = 0.7
+	min_scale = 100
+	max_scale = 400
+}
+TRY_REPLACE:p_building_age_3_discovery = {
+	scaled_gold = 0.8
+	min_scale = 200
+	max_scale = 600
+}
+TRY_REPLACE:p_building_age_4_reformation = {
+	scaled_gold = 1
+	min_scale = 400
+	max_scale = 1200
+}
+TRY_REPLACE:p_building_age_5_absolutism = {
+	scaled_gold = 1.2
+	min_scale = 800
+	max_scale = 1600
+}
+TRY_REPLACE:p_building_age_6_revolutions = {
+	scaled_gold = 1.5
+	min_scale = 1200
+	max_scale = 2400
+}
+#expensive
+TRY_REPLACE:p_expensive_building_age_1_traditions = {
+	scaled_gold = 1.5
+	min_scale = 200
+	max_scale = 600
+}
+TRY_REPLACE:p_expensive_building_age_2_renaissance = {
+	scaled_gold = 1.7
+	min_scale = 400
+	max_scale = 2000
+}
+TRY_REPLACE:p_expensive_building_age_3_discovery = {
+	scaled_gold = 2
+	min_scale = 800
+	max_scale = 3000
+}
+TRY_REPLACE:p_expensive_building_age_4_reformation = {
+	scaled_gold = 2.5
+	min_scale = 1600
+	max_scale = 4000
+}
+TRY_REPLACE:p_expensive_building_age_5_absolutism = {
+	scaled_gold = 3
+	min_scale = 1200
+	max_scale = 6000
+}
+TRY_REPLACE:p_expensive_building_age_6_revolutions = {
+	scaled_gold = 4
+	min_scale = 1600
+	max_scale = 8000
+}
