@@ -1,0 +1,32 @@
+﻿###################################
+# Hardcoded
+###################################
+#Added cultural acceptance bonus for the ai to compensate for the reduced assimilation. 
+
+INJECT:difficulty_ai_normal = {
+	game_data = {
+		category = country
+	}
+
+	cultures_capacity = 2
+	wrong_culture_levy_size = 0.25
+}
+
+INJECT:difficulty_ai_hard = {
+	game_data = {
+		category = country
+	}
+	
+	cultures_capacity = 4
+	wrong_culture_levy_size = 0.35
+}
+
+INJECT:difficulty_ai_very_hard = {
+	game_data = {
+		category = country
+	}
+	
+	cultures_capacity = 5
+	wrong_culture_levy_size = 0.5
+}
+
