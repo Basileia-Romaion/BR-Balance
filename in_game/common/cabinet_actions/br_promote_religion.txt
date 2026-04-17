@@ -8,7 +8,10 @@
 	}
 	
 	allow = {
-		religious_unity < 1.0
+		AND = {##
+			religious_unity < 1.0
+			is_ai = no
+		}
 		trigger_if = {
 			limit = {
 				has_country_modifier = sco_the_first_congregation
