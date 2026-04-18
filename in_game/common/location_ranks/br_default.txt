@@ -1,6 +1,5 @@
 ﻿#Note:  logic assumes that anything below a rank in the list is worse
 REPLACE:city = {
-	
 	rank_modifier = {
 		local_burghers_desired_pop = 1.0
 		local_laborers_desired_pop = 1.0
@@ -39,9 +38,19 @@ REPLACE:city = {
 	
 	allow = {
 		location_rank = location_rank:town
-		population >= 50 # was 30
+		OR = {
+			AND = {
+				owner = { is_ai = no }
+				population >= 30
+			}
+			AND = {
+				owner = { is_ai = yes }
+				population >= 50
+			}
+		}
 		modifier:cannot_upgrade_location = no
 	}
+
 	max_rank = yes
 	
 	build_time = 730
@@ -57,7 +66,6 @@ REPLACE:city = {
 }
 
 REPLACE:town = {
-	
 	rank_modifier = {
 		local_burghers_desired_pop = 0.2
 		local_laborers_desired_pop = 0.2
@@ -86,24 +94,34 @@ REPLACE:town = {
 	}
 	
 	allow = {
-		population >= 15
-		province = {
-			any_location_in_province = {
-				is_city = yes
-				count < 2
-			}
-		}
 		OR = {
 			AND = {
-				is_capital = yes
-				owner = {
-					num_locations > 2
-				}
+				owner = { is_ai = no }
+				population >= 5
 			}
-			owner = {
-				num_locations > 9
+			AND = {
+				owner = { is_ai = yes }
+				population >= 25
 			}
 		}
+
+		#province = {
+		#	any_location_in_province = {
+		#		is_city = yes
+		#		count < 2
+		#	}
+		#}
+		#OR = {
+		#	AND = {
+		#		is_capital = yes
+		#		owner = {
+		#			num_locations > 2
+		#		}
+		#	}
+		#	owner = {
+		#		num_locations > 9
+		#	}
+		#}
 		modifier:cannot_upgrade_location = no
 	}
 	
@@ -118,24 +136,11 @@ REPLACE:town = {
 
 }
 
-REPLACE:rural_settlement = {
+INJECT:rural_settlement = {
 	rank_modifier = {
-		local_max_rgo_size_modifier = 1.0
-		local_monthly_food_modifier = 0.1
-		
-		local_population_growth = 0.001
 		local_pop_assimilation_speed_modifier = -0.33 #br added
 		local_pop_conversion_speed_modifier = -0.33 #br added
-		#local_tribal_promotion = -0.25 #br added
+		local_tribal_promotion = -0.33 #br added
 	}
-	
-	country_modifier = {
-		monthly_doom = 0.005
-	}
-	
-	color = color_rank_county
-
-	frame_tier = 1
-	show_in_label = no
 
 }
